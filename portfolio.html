@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" href="portfoliostyle.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                    <div class="left">
+                        <div class="Name"><span style="color:#9535ef;font-weight: bolder">Vaibhavi Srivastava</span>
+                            <div class="contact">
+                                <img src="D:\Pictures\java try\.vscode\Portfolio website\portfolioimages\envelope.png">
+                                  srivastava.vaibhavi17@gmail.com
+                            </div>
+                            <div class="contact">
+                                <img src="D:\Pictures\java try\.vscode\Portfolio website\portfolioimages\phone.png">
+                                 9369111975
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="right">
+                            <a class ="topmenu" href="#AboutMe">AboutMe</a>
+                            <a class="topmenu" href="#Skills">Skills</a>
+                            <a class="topmenu" href="#Projects">Projects</a>
+                            <a class="topmenu" href="#Recommendations">Recomendations</a>
+                    </div>
+            </nav>
+            
+        </header>      
+        <div id="portfolio">
+            <section class="AboutMe">
+              <div class="leftsection">
+                <figure id="fig">
+                    <img src="D:\Pictures\java try\.vscode\Portfolio website\portfolioimages\profileimage.png">
+                </figure>
+                </div>
+                <div class="rightsection">
+                <article id="intro">
+                    <div id="name"> Hi,I am<span style="color:#9535ef;font-weight: bolder;" >Vaibhavi</span>  !</div>
+                    <div style="font-size: 20px;">Passionate and dedicated B.Tech in Computer Science and Engineering graduate seeking an entry-level position . Eager to apply a strong foundation in programming, database management and Machine Learning to contribute to innovative projects. Demonstrated ability to solve complex problems through analytical thinking and a keen eye for detail. Committed to continuous learning and professional growth within a dynamic and forward-thinking organization.
+                    </div>
+                </article>
+              </div>
+            </section>
+            <section id="Skills">
+                <h2>Skills</h2>
+                <div class="Allskills">
+                    <div class="skills">
+                        <img src="C:\Users\Dell\Pictures\portfolio site\java.png" width=90px height=80px/>
+                        <h3> Java</h3>
+                    </div>
+                    <div class="skills">
+                        <img src="C:\Users\Dell\Pictures\portfolio site\a397c318927d52f6bdb974221e57a7ce.png"width=100px height=80px/>
+                        <h3> Python</h3>
+                    </div>
+                    <div class="skills">
+                        <img src="C:\Users\Dell\Pictures\portfolio site\HTML5_logo_and_wordmark.svg.png"width=100px height=80px/>
+                         <h3>HTML</h3>
+                    </div>
+                    <div class="skills">
+                        <img src="C:\Users\Dell\Pictures\portfolio site\CSS-Logo.png"width=100px height=80px/>
+                         <h3>CSS</h3>
+                    </div>
+                    <div class="skills">
+                        <img src="C:\Users\Dell\Pictures\portfolio site\JavaScript-Logo.png"width=100px height=80px/>
+                         <h3>JavaScript</h3>
+                    </div>
+                    <div class="skills">
+                        <img src="C:\Users\Dell\Pictures\portfolio site\MySQL-Logo.png"width=100px height=80px/>
+                         <h3>MySQL</h3>
+                    </div>
+                </div>
+                
+            </section>
+            <section id="Projects">
+                <h2>Projects</h2>
+                <div class="AllProjects">
+                    <div class ="projectcard">
+                        <h3>Player-Enemy game</h3>
+                        <ul>
+                            <li>
+                                A simple 2D game in which the player needs to avoid collisions with the enemy, developed in
+                                java using core concepts of GUI ,threads.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class= "projectcard">
+                        <h3>Portfolio Website</h3>
+                        <ul>
+                            <li>
+                                Portfolio website designed and developed using HTML,CSS and JavaScript to serve as a interactive
+                                resume and platform to demonstrate my work.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class= "projectcard">
+                        <h3>Book Recommendation System</h3>
+                        <ul>
+                            <li>
+                                A book recommendation system project aims to create a system that suggests books to users based on 
+                                their interests and preferences made using Collaborative filtering machine learning technique.
+                            </li>
+                        </ul>
+                    </div>
+                </div>               
+            </section>
+            <section id="Recommendations">
+                <h2>Recommendations</h2>
+                <div class="all_recommendations" id="all_recommendations">
+                    <div class="recommendation">
+                        <span>&#8220;</span>
+                        Vaibhavi is a very quick learner and quickly grasps key concepts of Web
+                        development. She got a great attitude & she is an excellent team
+                        player. She has a curious mind and asks the right question. She takes
+                        initiative within a team and has potentials to lead the team.
+                        <span>&#8221;</span>
+                    </div>
+                    <div class="recommendation">
+                        <span>&#8220;</span>
+                        Working with Vaibhavi has been an awesome experience. She is highly
+                        knowledgable and always goes the extra step to make sure everything is
+                        right. For any future projects that need her expertise I would
+                        definitely want to work with her again.
+                        <span>&#8221;</span>
+                    </div>
+                    <div class="recommendation">
+                        <span>&#8220;</span>
+                        One of the amazing to work with. On time, puctual, I mean an awesome person to work with.
+                        <span>&#8221;</span>
+                    </div>
+                </div>
+            </section>
+            <section id="recomendation form">
+                <div class="form">
+                    <fieldset>
+                       <legend class="introduction">Leave a Recommendation </legend>
+                       <input type="text"placeholder="Name(optional)"/><br/>
+                       <textarea id="new_recommendation"cols="50"rows="10"placeholder="Message">
+                       </textarea>
+                       <div class="form">
+                        <button id="recommendation_btn" onclick="addRecommendation()">
+                            Submit
+                        </button>
+                       </div>
+                    </fieldset>
+                </div>
+            </section>
+            <div class="iconbutton">
+                <a href="#">
+                  <!--Add the code here for the logo to appear and the icon to be actionable-->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="white"
+                    width="63px"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </a>
+              </div>
+          
+              <div class="popup" id="popup" class="flex_center">
+                <img src="html_finalprojimages/checkmark--outline.svg" />
+                <h3>Thanks for leaving a recommendation🎉</h3>
+                <button onclick="showPopup(false)">Ok</button>
+              </div>
+        </div>
+    </body>
+</html>
